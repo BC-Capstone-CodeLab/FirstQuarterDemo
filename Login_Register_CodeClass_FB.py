@@ -6,7 +6,6 @@ CodeLab CodeClass
 This file contains implementation template of registration and login functions for the CodeClass website.
 Please modify template with corresponding database information to make use of functions correctly. Look for
 "MODIFY CODE HERE" in comments.
-Video link used as tutorial: https://www.youtube.com/watch?v=dR_cDapPWyY
 '''
 
 # function allows user to register to CodeClass using a username not already in database and any password
