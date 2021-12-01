@@ -9,8 +9,6 @@ to put database information when updating database.
 # this function takes user input for grade and then sends a string of the grade out of 100
 # to the database to be stored as grade for assignment for a student
 def updateAssignmentGrade():
-    # establish connection to database
-    database = open("database.txt")
     print("Please enter grade out of 100 for this assignment that student recieved (numerator of fraction x/100 where x is the grade).")
     try:
         inputGrade = input("Enter grade here: ")
@@ -24,9 +22,9 @@ def updateAssignmentGrade():
             updateAssignmentGrade()
         else:
             grade = inputGrade + "/100"
-            #print(grade)
+            print(grade)
             # MODIFY CODE HERE
-            database[assignment[grade]] = grade
+            #database[assignment[grade]] = grade
 
 # testing update assignment grade function
 #updateAssignmentGrade()
