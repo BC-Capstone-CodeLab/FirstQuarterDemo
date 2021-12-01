@@ -11,8 +11,6 @@ Video link used as tutorial: https://www.youtube.com/watch?v=dR_cDapPWyY
 
 # function allows user to register to CodeClass using a username not already in database and any password
 def register():
-    # establish connection to database
-    database = open("database.txt", "r")
     userName = input("Create username: ")
     password0 = input("Create password: ")
     password1 = input("Confirm password: ")
@@ -32,8 +30,7 @@ def register():
     # add user to database
     # MODIFY CODE HERE
     else:
-        database = open("database.txt", "a")
-        database.write(userName + ", " + password0 + "\n")
+        database.write(userName, password0)
         print("Account created successfully.")
 
 # testing register function
@@ -41,8 +38,6 @@ def register():
 
 # function allows user to login to CodeClass with an account that already exists in database
 def login():
-    # establish connection to database
-    database = open("database.txt", "r")
     userName = input("Enter username: ")
     password = input("Enter password: ")
     # checking for user input
