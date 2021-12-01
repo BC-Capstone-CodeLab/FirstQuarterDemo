@@ -24,7 +24,7 @@ def updateAssignmentGrade():
             grade = inputGrade + "/100"
             print(grade)
             # MODIFY CODE HERE
-            #database[assignment[grade]] = grade
+            database[assignment[grade]] = grade
 
 # testing update assignment grade function
 #updateAssignmentGrade()
