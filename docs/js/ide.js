@@ -65,7 +65,7 @@ var layoutConfig = {
 };
 
 $(document).ready(function () {
-    require(["vs/editor/editor.main"], function (ignorable, App, DB ) {
+    require(["vs/editor/editor.main"], function (ignorable) {
         layout = new GoldenLayout(layoutConfig, $("#ide-windows"));
 
         layout.registerComponent("code area", function (container, state) {
